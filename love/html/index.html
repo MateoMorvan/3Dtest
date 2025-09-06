@@ -1,0 +1,45 @@
+<!-- http://localhost:8000 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle 3D</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <!-- <link rel="stylesheet" href="../css/monstyles.css" /> -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: gray;
+        }
+        model-viewer {
+            width: 50vw;
+            height: 50vh;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotateX(45deg);
+            }
+            50% {
+                transform: rotateX(-10deg);
+            }
+            100% {
+                transform: rotateX(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio src="../music/shape of you but its low quality" autoplay preload="auto" loop>
+
+    </audio>
+
+    <model-viewer src="../img/heart_in_love.glb" disable-zoom disable-pan disable-tap preload auto-rotate auto-rotate-delay="0" rotation-per-second="45deg" autoplay></model-viewer>
+</body>
+</html>
