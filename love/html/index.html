@@ -16,6 +16,8 @@
             height: 100vh;
             margin: 0;
             background-color: white;
+            display: flex;
+            flex-direction: column;
         }
         model-viewer {
             width: 50vw;
@@ -36,11 +38,12 @@
     </style>
 </head>
 <body>
-    <h1 id="lovemygirl"> Je t'aime Lou-Anne</h1>
-    <audio src="../music/shapeofu.mp3" autoplay preload="auto" loop>
+    <audio src="shapeofu.mp3" autoplay preload="auto" loop>
 
     </audio>
 
     <model-viewer src="../img/heart_in_love.glb" disable-zoom disable-pan disable-tap preload auto-rotate auto-rotate-delay="0" rotation-per-second="45deg" autoplay></model-viewer>
+
+    <h1 id="lovemygirl"> Je t'aime Lou-Anne</h1>
 </body>
 </html>
